@@ -2,31 +2,115 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>최흥기's 포트폴리오</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>최흥기 포트폴리오</title>
     <link href="./CSS/reset.css" rel="stylesheet" />
     <link href="./CSS/style.css" rel="stylesheet" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- <link href="plugins/fontawesome-free-7.1.0-web/css/all.css"
+        rel="stylesheet"/> -->
+    <!-- Boxicons CSS -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
     <script src="./JS/jquery.3.7.1.js"></script>
-    <script src="./plugins/bxslider-4-4.2.17/src/js/jquery.bxslider.js"></script>
-    <script>
-      $(document).ready(function () {
-        $(".slider").bxSlider({
-          controls: false,
-          auto: true,
-          pager: false,
-        });
-      });
-    </script>
   </head>
   <body>
-    <div class="overlay"></div>
-    <div class="slider">
-      <div class="background_1"></div>
-      <div class="background_2"></div>
-      <div class="background_3"></div>
-    </div>
-    <div class="content">
-      <p>안녕하세요</p>
-      <p>개발자 최흥기 입니다</p>
-    </div>
+    <nav>
+      <div class="nav-bar">
+        <span class="logo"><a href="#">Choi Heung Gi's Portfolio</a></span>
+
+        <div class="menu">
+          <ul class="nav-links">
+            <li><a href="#personal-data">About Me</a></li>
+            <li><a href="#Skills">Skills</a></li>
+            <li><a href="#Projects">Projects</a></li>
+            <li><a href="#Career">Career</a></li>
+            <li><a href="#Contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section id="About-me">
+      <div class="overlay"></div>
+      <div class="background_image"></div>
+      <div class="self-introduce-text">
+        <p class="main-title">
+          안녕하세요 : )<br /><br />
+          깊이 탐구하는 <span style="color: #c5a059">개발자 최흥기</span>입니다.
+        </p>
+        <p class="sub-title">
+          사람의 마음을 탐구하던 통찰력으로 기술과 사람을 잇는 지속 가능한
+          개발을 꿈꿉니다.
+        </p>
+      </div>
+      <section id="personal-data">
+        <div class="About-me-logo">
+          <p><i class="fa-solid fa-check"></i> About me</p>
+        </div>
+        <div class="specific-data">
+          <div class="profile-image"></div>
+          <div class="data">
+            <ul class="data-ul">
+              <li><i class="fa-solid fa-calendar"></i> 출생: 94.09.20</li>
+              <li><i class="fa-solid fa-house"></i> 거주지: 서울시 구로구</li>
+              <li>
+                <i class="fa-solid fa-graduation-cap"></i> 학력: 전남도립대학교
+                / 정보통신공학과
+              </li>
+              <li><i class="fa-solid fa-at"></i> 이메일: pamo23@naver.com</li>
+              <li>
+                <i class="fa-brands fa-github"></i
+                ><a href="https://github.com/HeungGiChoi" target="_blank">
+                  GitHub</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <section id="Skills">
+      <div class="used-skills"></div>
+
+      <div class="Lists">
+        <ul class="skill-list">
+          <li>Python</li>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>React</li>
+          <li>Vite</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="Projects">
+      <span>Projects</span>
+      <div class="project-1"></div>
+      <div class="project-2"></div>
+      <div class="project-3"></div>
+      <div class="project-4"></div>
+    </section>
+
+    <section id="Career">
+      <span>Career</span>
+      <div class="Acadamic"></div>
+      <div class="Career"></div>
+      <div class="Education"></div>
+    </section>
+
+    <section id="Contact">
+      <span>Contact</span>
+      <div class="contact-data"></div>
+      <div class="contact-message"></div>
+    </section>
+    <script src="./JS/nav_scrolled_throttle.js"></script>
   </body>
 </html>

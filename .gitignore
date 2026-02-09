@@ -1,0 +1,5 @@
+.env
+*.pem
+*.key
+*.txt
+fontawesome-free-7.1.0-web/
