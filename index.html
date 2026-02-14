@@ -20,6 +20,8 @@
       rel="stylesheet"
     />
     <script src="./JS/jquery.3.7.1.js"></script>
+    <script src="./JS/nav_scrolled_throttle.js" defer></script>
+    <!--<script src="./JS/project_modal.js" defer></script>-->
   </head>
   <body>
     <nav>
@@ -131,7 +133,7 @@
 
         <div class="skill-box-wrapper">
           <div class="backend-database">
-            <div class="skills-category">Backend & Database</div>
+            <div class="skills-category">Backend & DB</div>
             <div class="list-area">
               <ul class="skill-list">
                 <li data-name="Flask">
@@ -139,11 +141,13 @@
                     src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flask/flask-original.svg"
                   />
                 </li>
+                <!--
                 <li data-name="Django">
                   <img
                     src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/django/django-plain.svg"
                   />
                 </li>
+                -->
                 <li data-name="FastAPI">
                   <img
                     src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/fastapi/fastapi-original.svg"
@@ -222,11 +226,159 @@
     </section>
 
     <section id="Projects">
-      <span>Projects</span>
-      <div class="project-1"></div>
-      <div class="project-2"></div>
-      <div class="project-3"></div>
-      <div class="project-4"></div>
+      <div class="project-pin">
+        <p><i class="fa-solid fa-check"></i><span> Projects</span></p>
+      </div>
+      <div class="project-box">
+        <div class="project-box-wrapper" project-name="전기차 충전소 위치 탐색">
+          <div class="project-1">
+            <div class="project-used-skill">
+              <ul>
+                <li>Python</li>
+                <li>Pandas</li>
+                <li>React</li>
+                <li>Tailwind CSS</li>
+                <li>Vite</li>
+                <li>AWS(RDS)</li>
+                <li>Vercel</li>
+              </ul>
+            </div>
+            <div class="project-description">
+              <p> 수도권 권역 전기차 충전소 설치 입지 선정 인사이트 도출을 위한 <br>웹사이트 개발</p>
+            </div>
+            <div class="project-schedule">
+              <p>2025. 04 ~ 2025. 05 (3명)</p>
+            </div>
+            <div class="detail-description">
+              <ul>
+                <li>전략적 전기자동차 충전소 운영에 대한 필요성과 관련된 기사에서 아이디어를 착안하여 개발</li>
+                <li>Python Pandas / Geopandas 기반 데이터 전처리</li>
+                <li>React / TailwindCSS / Vite 기반 프론트엔드 제작 및 번들링(Bundling)</li>
+                <li>Mapbox Token 기반 인터렉티브 지도 구현</li>
+              </ul>
+            </div>
+          </div>
+          <button type="button"></button>
+          <div id="project-1-modal" class="modal">
+            <div class="modal-content">
+              <span id="closeBtn-1" class="close">&times;</span>
+              <p>여기에 모달 내용 작성</p>
+              <p>원하는대로 내용 수정 가능</p>
+            </div>
+          </div>
+        </div>
+        <div class="project-box-wrapper" project-name="가정용 스마트팜 Backend 개발">
+          <div class="project-2">
+            <div class="project-used-skill">
+              <ul>
+                <li>Python</li>
+                <li>Flask</li>
+                <li>MySQL</li>
+                <li>AWS(EC2)</li>
+                <li>GitHub</li>
+              </ul>
+            </div>
+            <div class="project-description">
+              <p> Arduino 및 OpenAI 기반, 가정용 자동 스마트팜 시스템 Backend, Arduino 개발</p>
+            </div>
+            <div class="project-schedule">
+              <p>2025. 06 ~ 2025. 07 (6명)</p>
+            </div>
+            <div class="detail-description">
+              <ul>
+                <li>초거대 AI 기반, 가정 내에서 자동으로 작물을 재배하여 식품 수급을 돕기 <br>위해 개발</li>
+                <li>Python Flask 기반 REST API 설계 및 개발</li>
+                <li>Arduino Temperature / Light Controller 구현(Heater, Cooling Pan, light bulb) </li>
+              </ul>
+            </div>
+          </div>
+          <button type="button"></button>
+          <div id="project-2-modal" class="modal">
+            <div class="modal-content">
+              <span id="closeBtn-2" class="close">&times;</span>
+              <p>여기에 모달 내용 작성</p>
+              <p>원하는대로 내용 수정 가능</p>
+            </div>
+          </div>
+        </div>
+        <div class="project-box-wrapper" project-name="Selenium 기반 댓글 작업 앱 개발">
+          <div class="project-3">
+            <div class="project-used-skill">
+              <ul>
+                <li>Python</li>
+                <li>Selenium</li>
+              </ul>
+            </div>
+            <div class="project-description">
+              <p> 유튜브 댓글 크롤링 및 특정 버튼을 자동으로 클릭하는 Desktop 앱 개발</p>
+            </div>
+            <div class="project-schedule">
+              <p>2025. 12 (1명)</p>
+            </div>
+            <div class="detail-description">
+              <ul>
+                <li>유튜브 댓글 키워드들의 방향성(긍정, 부정)을 파악하고자 개발</li>
+                <li>Python 기반 문서 자동화 작업 경험 및 활용을 위해 개발</li>
+                <li>Selenium 및 Chromewebdriver 기반 웹 브라우저 콘텐츠 크롤링 및 <br>댓글 좋아요 버튼 클릭 구현</li>
+                <li>Tkinter를 활용한 직관적인 Desktop 앱 형태 구현</li>
+              </ul>
+            </div>
+          </div>
+          <button type="button"></button>
+          <div id="project-3-modal" class="modal">
+            <div class="modal-content">
+              <span id="closeBtn-3" class="close">&times;</span>
+              <p>여기에 모달 내용 작성</p>
+              <p>원하는대로 내용 수정 가능</p>
+            </div>
+          </div>
+        </div>
+        <div class="project-box-wrapper" project-name="Portfolio 웹사이트 개발">
+          <div class="project-4">
+            <div class="project-used-skill">
+              <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>GitHub Deployment</li>
+              </ul>
+            </div>
+            <div class="project-description">
+              <p> 개인 포트폴리오 웹사이트 디자인 및 구현</p>
+            </div>
+            <div class="project-schedule">
+              <p>2026. 02 (1명)</p>
+            </div>
+            <div class="detail-description">
+              <ul>
+                <li>웹 프론트엔드 경험 및 나만의 포트폴리오를 위한 웹사이트 개발</li>
+                <li>HTML, CSS, JavaScript 기반 구현</li>
+                <li>font awsome, devicon 등 CDN 활용 디자인</li>
+              </ul>
+            </div>
+          </div>
+          <button type="button"></button>
+          <div id="project-4-modal" class="modal">
+            <div class="modal-content">
+              <span id="closeBtn-4" class="close">&times;</span>
+              <p>여기에 모달 내용 작성</p>
+              <p>원하는대로 내용 수정 가능</p>
+            </div>
+          </div>
+        </div>
+        <div class="project-box-wrapper" project-name="(진행중..) 커뮤니티 플랫폼 개발 프로젝트">
+          <div class="project-5"></div>
+        </div>
+        <div class="project-box-wrapper" project-name="(..예정) 단기 알바 인력관리 프로그램">
+          <div class="project-6"></div>
+        </div>
+        <div class="project-box-wrapper" project-name="(..예정) OpenAI API 기반 심리상담 프로그램">
+          <div class="project-7"></div>
+        </div>
+        <div class="project-box-wrapper" project-name="(..예정) OpenAI API 기반 집밥 레시피 프로그램">
+          <div class="project-8"></div>
+        </div>
+      </div>
     </section>
 
     <section id="Career">
@@ -241,6 +393,5 @@
       <div class="contact-data"></div>
       <div class="contact-message"></div>
     </section>
-    <script src="./JS/nav_scrolled_throttle.js"></script>
   </body>
 </html>

@@ -1,7 +1,7 @@
 My first Portfolio!!
 
-Name: Choi Heung Gi
-Birth: 1994. 09. 20
+Name: Choi Heung Gi  
+Birth: 1994. 09. 20  
 Live: Seoul, Guro
 
 I'm Web Programmer.
