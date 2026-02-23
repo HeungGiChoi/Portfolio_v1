@@ -9,7 +9,7 @@ const modalDesc = modal.querySelector(".description");
 
 open_Btn.forEach((button, index) => {
   button.addEventListener("click", () => {
-    fetch("../data/projects_data.json")
+    fetch("data/projects_data.json")
       .then((res) => res.json())
       .then((data) => {
         const project_data = data[index];
