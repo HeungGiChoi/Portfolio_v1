@@ -1,27 +1,56 @@
-// 모달 컨테이너
-const modal = document.querySelector(".modal");
-// 투명 버튼
-const open_btn = document.querySelector("button");
-// 닫기 버튼
-const close_btn = document.querySelector(".close");
+const modal = document.getElementById("modalContainer");
+const close_Btn = document.querySelector(".close");
 
-//모달 열기 함수와
-open_btn.addEventListener("click", () => {
-  modal.classList.add("show");
-  document.body.style.overflow = "hidden";
+const open_Btn = document.querySelectorAll(".modal-button");
+
+const modalTitle = modal.querySelector("h3");
+const modalSkills = modal.querySelector(".skills");
+const modalDesc = modal.querySelector(".description");
+
+open_Btn.forEach((button, index) => {
+  button.addEventListener("click", () => {
+    fetch("../data/projects_data.json")
+      .then((res) => res.json())
+      .then((data) => {
+        const project_data = data[index];
+
+        modalTitle.textContent = project_data.title;
+        modalSkills.innerHTML = `
+          <strong>Technology Stack</strong> <br><br>
+          <ul>
+            ${project_data.skills.map((item) => `<li>${item}</li>`).join("")}
+          <ul>
+        `;
+        modalDesc.innerHTML = `
+          <strong>Summary: </strong> ${project_data.description}<br><br>
+          <ul>
+            ${project_data.details.map((item) => `<li>${item}</li>`).join("")}
+          <ul>
+        `;
+        modal.classList.add("show");
+        document.body.style.overflow = "hidden";
+      })
+      .catch((error) => console.error("데이터 로드 실패:", error));
+  });
 });
 
-//모달 닫기 함수를 만들기
-const close_modal = () => {
+// open_Btn.forEach((button, index) => {
+//   button.addEventListener("click", () => {
+//     modal.classList.add("show");
+//     document.body.style.overflow = "hidden";
+//     console.log(`${index + 1}번째 버튼 클릭`);
+//   });
+// });
+
+const close_func = () => {
   modal.classList.remove("show");
   document.body.style.overflow = "auto";
 };
 
-close_btn.addEventListener("click", close_modal);
+close_Btn.addEventListener("click", close_func);
 
-//배경 클릭 시 모달창 닫기
-window.addEventListener("click", (element) => {
-  if (element === modal) {
-    close_modal();
+window.addEventListener("click", (e) => {
+  if (e.target === modal) {
+    close_func();
   }
 });

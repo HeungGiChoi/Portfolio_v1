@@ -22,6 +22,7 @@ button {
   --text-color: #FFF;
   --search-bar: #F2F2F2;
   --search-text: #010718;
+  scrollbar-gutter: stable;
 }
 
 html {
@@ -32,6 +33,70 @@ html {
 body {
   height: 100%;
   background-color: var(--body-color);
+}
+
+#modalContainer {
+  position: fixed;
+  
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+
+  visibility: hidden;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  overflow-y: auto;
+  padding: 30px 0;
+  
+  background-color: rgba(0, 0, 0, 0.5);
+  
+  z-index: 999999;
+  pointer-events: auto;
+  
+  opacity: 0;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+#modalContainer.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+#modalContainer #modalContent {
+  position: relative;
+  width: 700px;
+  border-radius: 10px;
+  background-color: wheat;
+  
+  padding: 20px;
+  
+  transform: translateY(-30px);
+  transition: transform 0.3s ease;
+}
+
+#modalContainer.show #modalContent {
+  transform: translateY(0);
+}
+
+#modalContent .close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  
+  font-size: 35px;
+  font-weight: bold;
+  
+  color: white;
+  transition: transform 0.2s ease;
+}
+
+#modalContent .close:hover {
+  cursor: pointer;
+  color: black;
+}
+
+#modalContent .close:active {
+  transform: scale(0.8);
 }
 
 nav {
@@ -392,89 +457,50 @@ nav .nav-bar .logo a {
   gap: 80px 10px;
 }
 
+#Projects .project-box .modal-button {
+  position: relative;
+  
+  width: 100px;
+  height: 40px;
+  
+  font-size: 15px;
+  font-weight: bold;
+  
+  border: 2px solid #4A5D4E;
+  border-radius: 15px;
+  text-align: center;
+  
+  background-color: transparent;
+  
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+#Projects .project-box .modal-button:hover {
+  background-color: darkolivegreen
+}
+
+#Projects .project-box .modal-button:active {
+  transform: scale(0.9);
+}
+
 #Projects .project-box .project-box-wrapper {
   position: relative;
   width: 90%;
-  height: 410px;
+  min-height: 440px;
   border: 3px solid #4A5D4E;
   border-radius: 30px;
   margin: auto;
   padding: 0 15px;
-  cursor: pointer;
   transition: background-color 0.1s ease, transform 0.1s ease;
 }
 
-#Projects .project-box .project-box-wrapper button {
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  cursor: pointer;
-  /*background-color: blue;*/
-}
-
-#Projects .project-box .project-box-wrapper .modal {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  
-  pointer-events: none;
-  background-color: rgba(0, 0, 0, 0.5);
-  
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /*z-index: 999;*/
-  
-  transition: opacity 0.3s ease-in-out;
-  opacity: 0;
-}
-
-.modal.show {
-  opacity: 1;
-}
-
-.modal-content {
-  max-width: 500px;
-  width: 100%;
-  height: 200px;
-  background-color: white;
-  padding: 20px;
-  border-radius: 10px;
-  /*box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);*/
-  
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
-  transform: scale(0.8);
-}
-
-.modal.show .modal-content {
-  opacity: 1;
-  transform: scale(1);
-}
-
-.modal .close {
-  color: #aaa;
-  /*float: right;*/
-  display: flex;
-  justify-content: flex-end;
-  font-size: 20px;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-.modal .close:hover {
-  color: black;
-  cursor: pointer;
-}
-
+/*
 #Projects .project-box .project-box-wrapper:hover {
   background-color: #E8E2D2;
   transform: translateY(-5px);
 }
+*/
 
 #Projects .project-box .project-box-wrapper::before {
   content: attr(project-name);
@@ -543,7 +569,7 @@ nav .nav-bar .logo a {
 }
 
 .project-box .project-box-wrapper .detail-description{
-  padding: 30px 20px;
+  padding: 30px 20px 15px;
 }
 
 .project-box .project-box-wrapper .detail-description li {

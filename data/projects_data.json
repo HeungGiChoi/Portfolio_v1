@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "title": "전기차 충전소 설치 입지 탐색",
+    "description": "수도권 권역 전기차 충전소 설치 입지 선정 인사이트 도출을 위한 웹사이트 개발",
+    "skills": [
+      "Python",
+      "Pandas",
+      "React",
+      "TailwindCSS",
+      "Vite",
+      "AWS(RDS)",
+      "Vercel"
+    ],
+    "details": [
+      "전략적 전기자동차 충전소 운영에 대한 필요성과 관련된 기사에서 아이디어를 착안하여 개발",
+      "Python Pandas / Geopandas 기반 데이터 전처리",
+      "React / TailwindCSS / Vite 기반 프론트엔드 제작 및 번들링(Bundling)",
+      "Mapbox Token 기반 인터렉티브 지도 구현"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "가정용 스마트팜 Backend 개발",
+    "description": "Arduino 및 OpenAI 기반, 가정용 자동 스마트팜 시스템 Backend, Arduino 개발",
+    "skills": ["Python", "Flask", "MySQL", "AWS(EC2)", "GitHub"],
+    "details": [
+      "초거대 AI 기반, 가정 내에서 자동으로 작물을 재배하여 식품 수급을 돕기 위해 개발",
+      "Python Flask 기반 REST API 설계 및 개발",
+      "Arduino Temperature / Light Controller 구현(Heater, Cooling Pan, light bulb)"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Selenium 기반 댓글 작업 앱 개발",
+    "description": "유튜브 댓글 크롤링 및 특정 버튼을 자동으로 클릭하는 Desktop 앱 개발",
+    "skills": ["Python", "Selenium"],
+    "details": [
+      "유튜브 댓글 키워드들의 방향성(긍정, 부정)을 파악하고자 개발",
+      "Python 기반 문서 자동화 작업 경험 및 활용을 위해 개발",
+      "Selenium 및 Chromewebdriver 기반 웹 브라우저 콘텐츠 크롤링 및 댓글 좋아요 버튼 클릭 구현",
+      "Tkinter를 활용한 직관적인 Desktop 앱 형태 구현"
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Portfolio 웹사이트 개발",
+    "description": "개인 포트폴리오 웹사이트 디자인 및 구현",
+    "skills": ["HTML", "CSS", "JavaScript", "GitHub Deployment"],
+    "details": [
+      "웹 프론트엔드 경험 및 나만의 포트폴리오를 위한 웹사이트 개발",
+      "HTML, CSS, JavaScript 기반 구현",
+      "font awsome, devicon 등 CDN 활용 디자인"
+    ]
+  }
+]
