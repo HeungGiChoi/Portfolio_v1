@@ -66,9 +66,9 @@ body {
   position: relative;
   width: 700px;
   border-radius: 10px;
-  background-color: wheat;
+  background-color: #F0FFF0;
   
-  padding: 20px;
+  padding: 30px;
   
   transform: translateY(-30px);
   transition: transform 0.3s ease;
@@ -86,7 +86,7 @@ body {
   font-size: 35px;
   font-weight: bold;
   
-  color: white;
+  color: wheat;
   transition: transform 0.2s ease;
 }
 
@@ -97,6 +97,134 @@ body {
 
 #modalContent .close:active {
   transform: scale(0.8);
+}
+
+#modalContent h3 {
+  font-size: 35px;
+  margin-bottom: 30px;
+}
+
+#modalContent .summary {
+  font-size: 16px;
+  margin: 20px 0;
+}
+
+#modalContent .skills {
+  font-size: 18px;
+}
+
+#modalContent .skill-list {
+  margin-bottom: 20px;
+}
+
+#modalContent .skill-list ul {
+  display: flex;
+}
+
+#modalContent .skill-list li {
+  position: relative;
+  list-style: none;
+  margin: 0 7px;
+  padding: 3px;
+  
+  width: 45px; height: 45px;
+  border-radius: 10px;
+  /*border: 0.1px solid black;*/
+  
+  background-color: white;
+}
+
+#modalContent .skill-list li::after {
+  content: attr(data-name);
+  position: absolute;
+  top: 90%; left: 50%;
+  transform: translate(-50%, -20%);
+  
+  text-align: center;
+  font-size: 15px;
+  font-weight: 300;
+  color:  #FDFBF7;
+  padding: 3px;
+  z-index: 20;
+  
+  border-radius: 5px;
+  background-color: #1B6C67;
+  transition: all 0.2s ease;
+  opacity: 0;  
+}
+
+#modalContent .skill-list li:hover::after {
+  opacity: 1;
+}
+
+#modalContent .skill-list li:first-child {
+  margin-left: 0;
+}
+
+#modalContent .skill-list li:last-child {
+  margin-right: 0;
+}
+
+#modalContent .member-schedule {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+#modalContent .member-schedule p {
+  margin-right: 20px;
+}
+
+#modalContent .product {
+  position: relative;
+  margin-bottom: 40px;
+  font-size: 18px;
+}
+
+#modalContent .product::after {
+  content: '';
+  position: absolute;
+  bottom: -20px; left: 9px;
+  width: 100%; height: 1px;
+  background-color: #322C29;
+}
+
+#modalContent .background {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+#modalContent .background li {
+  font-size: 15px;
+  list-style-position: outside;
+  margin-left: 30px;
+  line-height: 1.6;
+  margin-bottom: 5px;
+}
+
+#modalContent .description {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+#modalContent .description li {
+  font-size: 15px;
+  list-style-position: outside;
+  margin-left: 30px;
+  line-height: 1.6;
+  margin-bottom: 2px;
+}
+
+#modalContent .meaning {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+#modalContent .meaning li {
+  font-size: 15px;
+  list-style-position: outside;
+  margin-left: 30px;
+  line-height: 1.6;
+  margin-bottom: 2px;
 }
 
 nav {
@@ -403,7 +531,7 @@ nav .nav-bar .logo a {
   font-weight: 300;
   color: #FDFBF7;
   padding: 3px;
-  
+
   border-radius: 5px;
   background-color: #1B6C67;
   transition: all 0.2s ease;
@@ -468,6 +596,7 @@ nav .nav-bar .logo a {
   
   border: 2px solid #4A5D4E;
   border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
   text-align: center;
   
   background-color: transparent;
@@ -477,6 +606,7 @@ nav .nav-bar .logo a {
 }
 
 #Projects .project-box .modal-button:hover {
+  transform: translateY(-3px);
   background-color: darkolivegreen
 }
 
@@ -488,11 +618,14 @@ nav .nav-bar .logo a {
   position: relative;
   width: 90%;
   min-height: 440px;
-  border: 3px solid #4A5D4E;
+  
+  border: 2px solid #4A5D4E;
   border-radius: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  
   margin: auto;
   padding: 0 15px;
-  transition: background-color 0.1s ease, transform 0.1s ease;
+  
 }
 
 /*

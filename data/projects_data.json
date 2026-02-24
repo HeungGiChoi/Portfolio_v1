@@ -2,55 +2,180 @@
   {
     "id": 1,
     "title": "전기차 충전소 설치 입지 탐색",
-    "description": "수도권 권역 전기차 충전소 설치 입지 선정 인사이트 도출을 위한 웹사이트 개발",
+    "summary": "수도권 권역 전기차 충전소 설치 입지 선정 인사이트 도출을 위한 웹사이트 개발",
     "skills": [
-      "Python",
-      "Pandas",
-      "React",
-      "TailwindCSS",
-      "Vite",
-      "AWS(RDS)",
-      "Vercel"
+      {
+        "name": "Python",
+        "img": "<img src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg'alt='Python Logo'/>"
+      },
+      {
+        "name": "Pandas",
+        "img": "<img src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original.svg'alt='Pandas Logo'/>"
+      },
+      {
+        "name": "React",
+        "img": "<img src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg'alt='React Logo'/>"
+      },
+      {
+        "name": "TailwindCSS",
+        "img": "<img src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg'alt='TailwindCSS Logo'/>"
+      },
+      {
+        "name": "Vite",
+        "img": "<img src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg'alt='Vite Logo' data-name='Vite'/>"
+      },
+      {
+        "name": "AWS(RDS)",
+        "img": "<img src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg'alt='AWS Logo'/>"
+      },
+      {
+        "name": "Vercel_deploy",
+        "img": "<img src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vercel/vercel-original.svg'alt='Vercel Logo'/>"
+      }
     ],
-    "details": [
-      "전략적 전기자동차 충전소 운영에 대한 필요성과 관련된 기사에서 아이디어를 착안하여 개발",
+    "members": "3명",
+    "schedule": "2025. 04 ~ 2025. 05",
+    "product": "URL",
+    "background": [
+      "(주)포스코 미래창조아카데미에서 진행한 팀 프로젝트",
+      "에너지 관련 프로젝트를 고민하던 중, 전략적 전기자동차 충전소 운영에 대한 필요성과 관련된 기사에서 아이디어를 착안",
+      "'전기차 충전소는 충분하다는데 왜 내가 찾으면 없지?' 라는 사람들의 반응을 토대로 '적절한 배치가 이루어지지 않은건가?' 라는 의심에서 시작"
+    ],
+    "description": [
+      "jupyter notebook 환경에서 작업",
+      "공공데이터 포털, 서울 열린데이터 광장의 전기차 충전소 정보 CSV 파일 활용",
       "Python Pandas / Geopandas 기반 데이터 전처리",
+      "Kakao Map REST API 활용, data 주소값 기반으로 위/경도 추출",
+      "ThreadPoolExecutor 활용 멀티스레딩 구현으로 데이터 전처리 작업시간 50% 이상 단축",
       "React / TailwindCSS / Vite 기반 프론트엔드 제작 및 번들링(Bundling)",
-      "Mapbox Token 기반 인터렉티브 지도 구현"
+      "Mapbox 서비스를 활용한 지도 시각화"
+    ],
+    "meaning": [
+      "위치 기반, 지도 기반 라이브러리 및 서비스에 대해 사용해볼 기회가 없었는데 이번 기회를 통해 Geopandas / Geojson / Mapbox 등 다양한 툴을 접해볼 수 있는 좋은 기회였음",
+      "Chat GPT 도움 덕에 넓은 서비스를 적극 활용할 수 있었으므로 앞으로 더 적극 활용해야겠다고 <br>생각함",
+      "추후 공공 데이터 실시간 API를 활용하여 실시간으로 변동되는 데이터가 시각화되는 서비스로 <br>업그레이드 하고자 함"
     ]
   },
   {
     "id": 2,
     "title": "가정용 스마트팜 Backend 개발",
-    "description": "Arduino 및 OpenAI 기반, 가정용 자동 스마트팜 시스템 Backend, Arduino 개발",
-    "skills": ["Python", "Flask", "MySQL", "AWS(EC2)", "GitHub"],
-    "details": [
-      "초거대 AI 기반, 가정 내에서 자동으로 작물을 재배하여 식품 수급을 돕기 위해 개발",
+    "summary": "Arduino 및 OpenAI 기반, 가정용 자동 스마트팜 시스템 Backend, Arduino 개발",
+    "skills": [
+      {
+        "name": "Python",
+        "img": "<img src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg'alt='Python Logo'/>"
+      },
+      {
+        "name": "Flask",
+        "img": "<img src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flask/flask-original.svg'alt='Flask Logo'/>"
+      },
+      {
+        "name": "MySQL",
+        "img": "<img src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg'alt='MySQL Logo'/>"
+      },
+      {
+        "name": "AWS(EC2)",
+        "img": "<img src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg'alt='AWS Logo'/>"
+      },
+      {
+        "name": "GitHub",
+        "img": "<img src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg'alt='GitHub Logo'/>"
+      }
+    ],
+    "members": "6명",
+    "schedule": "2025. 06 ~ 2025. 07",
+    "product": "URL",
+    "background": [
+      "(주)포스코 미래창조아카데미에서 진행한 팀 프로젝트",
+      "기후 변화로 인한 농작물 재배 환경의 불안정성 증가, 이로 인한 농산물 가격 불안정 문제 발생",
+      "이와 더불어 무농약, 유기농 식품에 대한 수요 증가로 가정용 스마트 팜 시장 연평균 8~12% 성장",
+      "기존 가정용 스마트팜은 작물 종류나 환경 설정이 제한적이며, 초보 사용자에게 난이도 높은 <br>유지관리 필요",
+      "초거대 AI (Large-scale Foundational AI)를 활용하여, 농작물 별 재배 환경, 생장 상태 분석, <br>병해 진단까지 통합적으로 수행하는 완전 자동화 가정용 스마트 팜 플랫폼 구축을 목표로 함"
+    ],
+    "description": [
       "Python Flask 기반 REST API 설계 및 개발",
+      "MySQL DB 설계 및 쿼리제작 참여",
+      "AWS EC2 인스턴스(Ubuntu) 기반, PuTTY 활용하여 서버 구축",
       "Arduino Temperature / Light Controller 구현(Heater, Cooling Pan, light bulb)"
+    ],
+    "meaning": [
+      "첫 백엔드 개발 및 Flask 라이브러리 사용한 프로젝트",
+      "DB 설계팀과 소통 오류로 몇번 API 설계를 뒤엎는 경험을 하면서 초기 설계와 커뮤니케이션의 <br>중요성을 깨달음",
+      "AI(OpenAI API)와 백엔드 / 프론트엔드(SW) 그리고 HW(Arduino) 가 연동된 하나의 시스템이 매력적이라 느꼈음",
+      "추후 기회가 된다면 이 세가지 구성요소를 포함한 또다른 프로젝트를 진행하고자 함"
     ]
   },
   {
     "id": 3,
     "title": "Selenium 기반 댓글 작업 앱 개발",
-    "description": "유튜브 댓글 크롤링 및 특정 버튼을 자동으로 클릭하는 Desktop 앱 개발",
-    "skills": ["Python", "Selenium"],
-    "details": [
-      "유튜브 댓글 키워드들의 방향성(긍정, 부정)을 파악하고자 개발",
-      "Python 기반 문서 자동화 작업 경험 및 활용을 위해 개발",
-      "Selenium 및 Chromewebdriver 기반 웹 브라우저 콘텐츠 크롤링 및 댓글 좋아요 버튼 클릭 구현",
+    "summary": "유튜브 댓글 크롤링 및 특정 버튼을 자동으로 클릭하는 Desktop 앱 개발",
+    "skills": [
+      {
+        "name": "Python",
+        "img": "<img src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg'alt='Python Logo'/>"
+      },
+      {
+        "name": "Selenium",
+        "img": "<img src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/selenium/selenium-original.svg'alt='Selenium Logo'/>"
+      }
+    ],
+    "members": "1명",
+    "schedule": "2025. 12",
+    "product": "URL",
+    "background": [
+      "구직 활동 중 Python 기반 개발자로써 웹 브라우저 자동화 역량이 필요하단 생각에 시작함",
+      "웹에서 데이터를 모으거나(크롤링) 버튼을 원격으로 클릭하는 작업을 하면서 웹 구조를 파악하고 <br>싶었음",
+      "평소에 애용하는 SNS 인 유튜브를 재료로 댓글 크롤링과 원격클릭(댓글 좋아요 버튼)을 경험해<br>보면 좋겠다 생각하여 개발을 진행함"
+    ],
+    "description": [
+      "Selenium 및 Chromewebdriver 기반 웹 브라우저 콘텐츠 크롤링 및 댓글 좋아요 버튼 클릭 <br>구현",
       "Tkinter를 활용한 직관적인 Desktop 앱 형태 구현"
+    ],
+    "meaning": [
+      "Python을 이용한 업무 자동화의 첫 경험이며, 이 경험을 통해 엑셀 등 다른 자동화 tool에도 관심이 생김",
+      "Tkinter를 활용하여 Desktop 앱을 구현하면서, Desktop 앱의 영역을 파악하게 됨",
+      "유튜브 댓글 뿐만 아니라 특정 커뮤니티 텍스트를 크롤링 하고 AI를 활용하여, 컨텐츠의 반응(긍정, 부정)을 파악하는 방식으로 추후 업데이트 계획"
     ]
   },
   {
     "id": 4,
     "title": "Portfolio 웹사이트 개발",
-    "description": "개인 포트폴리오 웹사이트 디자인 및 구현",
-    "skills": ["HTML", "CSS", "JavaScript", "GitHub Deployment"],
-    "details": [
-      "웹 프론트엔드 경험 및 나만의 포트폴리오를 위한 웹사이트 개발",
-      "HTML, CSS, JavaScript 기반 구현",
-      "font awsome, devicon 등 CDN 활용 디자인"
+    "summary": "개인 포트폴리오 웹사이트 디자인 및 구현",
+    "skills": [
+      {
+        "name": "HTML",
+        "img": "<img src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg'alt='HTML Logo'/>"
+      },
+      {
+        "name": "CSS",
+        "img": "<img src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg'alt='CSS Logo'/>"
+      },
+      {
+        "name": "JavaScript",
+        "img": "<img src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg'alt='JavaScript Logo'/>"
+      },
+      {
+        "name": "GitHub",
+        "img": "<img src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg'alt='GitHub Logo'/>"
+      }
+    ],
+    "members": "1명",
+    "schedule": "2026. 02",
+    "product": "URL",
+    "background": [
+      "구직 활동을 진행하며 포트폴리오를 계획하던 중, 개발자로써 PPT나 노션보단 개인 포트폴리오 웹사이트를 개발하는 편이 좋겠다 생각하여 개발하게 됨",
+      "HTML, CSS, JavaScript를 실습해볼 수 있는 좋은 기회라 생각하여 시작함"
+    ],
+    "description": [
+      "HTML, CSS, JavaScript 기반 작성",
+      "font awsome, devicon 등 CDN 활용 디자인",
+      "JS 클릭 및 스크롤 Event listener를 활용한 인터렉티브 효과 구현",
+      "json 데이터 기반 JS fetch 함수를 활용한 데이터 렌더링(Modal)"
+    ],
+    "meaning": [
+      "나를 잘 표현하면서도 깔끔한 디자인이 중요하단 생각으로 다양한 레퍼런스를 참고하고 디자인을 <br>하면서 디자인 함. 덕분에 UI/UX 역량을 키울 수 있었음",
+      "특수한 React나 jQuery 라이브러리 없이 하나씩 개발해가면서 기초를 다질 수 있게 됨",
+      "또한 Frontend 웹브라우저를 인터렉티브하게 제어할 수 있는 JS(fetch, addEventListener 등)를 사용해볼 수 있어서 의미가 있음"
     ]
   }
 ]
