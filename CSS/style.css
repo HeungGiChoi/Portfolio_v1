@@ -651,6 +651,60 @@ nav .nav-bar .logo a {
   background-color: #4A5D4E; 
 }
 
+.project-box .project-box-wrapper .progress-container {
+  position: relative;
+    
+  margin-top: 30px;
+  min-height: 50px;
+  
+  border-radius: 5px;
+  
+  color: #4A5D4E;
+  
+  display: flex;
+  justify-content: space-between;
+}
+
+.progress-container .progress-label {
+  width: 15%;
+  
+  display: flex;
+  justify-content: center;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  
+  text-align: center;
+  
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.progress-container .progress-bar {
+  width: 100%;
+  height: 8px;
+  
+  margin-top: 8px;
+  
+  background-color: #e0e0e0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress-bar .progress-bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #2ecc71, #27ae60);
+  border-radius: 10px;
+  transition: width 1s ease;
+}
+
+.progress-container .progress-percent {
+  margin-left: 10px;
+  padding-top: 4px;
+  
+  font-size: 17px;
+  font-weight: bold;
+}
+
 .project-box .project-box-wrapper .project-used-skill {
   position: relative;
   height: 60px;
