@@ -19,7 +19,10 @@ open_Btn.forEach((button, index) => {
     fetch("data/projects_data.json")
       .then((res) => res.json())
       .then((data) => {
-        const project_data = data[index];
+        const project_data = data.find((item) => item.id === Number(button.id));
+
+        console.log(typeof button.id);
+        console.log(typeof data[index].id);
 
         modalTitle.textContent = project_data.title;
         modalSummary.innerHTML = `
@@ -40,7 +43,7 @@ open_Btn.forEach((button, index) => {
           <i class="fa-solid fa-calendar"></i><strong> 기간 : </strong> ${project_data.schedule}
         `;
         modalProduct.innerHTML = `
-          <i class="fa-solid fa-link"></i><strong> Deployment : </strong> ${project_data.product}
+          <i class="fa-solid fa-link"></i><strong> Deployment / GitHub </strong> <br><br> &emsp;<a href="${project_data.product}" target="_blank">${project_data.product}</a>
         `;
         modalBackground.innerHTML = `
           &#129300;<strong> Background </strong> <br><br>

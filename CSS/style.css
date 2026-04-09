@@ -577,6 +577,35 @@ nav .nav-bar .logo a {
   background-color: #2D2926;
 }
 
+#Projects #choice-box {
+  position: relative;
+  
+  font-size: 17px;
+  font-weight: 350;
+}
+
+#Projects #choice-box fieldset {
+  position: relative;
+  
+  display: flex;
+  justify-content: center;
+  /*flex-direction: column;*/
+
+  padding: 20px;
+  margin-left: 50px;
+}
+
+#Projects #choice-box fieldset div {    
+  margin-right: 25px;
+}
+
+input[type="checkbox"] {
+  transform: scale(1.6);
+  
+  margin-right: 3px;
+  cursor: pointer;
+}
+
 #Projects .project-box {
   margin-top: 20px;
   padding: 30px 100px;
@@ -727,6 +756,65 @@ nav .nav-bar .logo a {
   border-radius: 5px;
 }
 
+.project-box .project-box-wrapper .project-using-skill {
+  position: relative;
+  height: 50px;
+}
+
+.project-box .project-box-wrapper .project-using-skill ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  
+  padding: 15px 0;
+}
+
+.project-box .project-box-wrapper .project-using-skill li {
+  margin: 0 7px;
+  padding: 3px;
+  font-size: 15px;
+  font-weight: 450;
+  background-color: #FDFBF7;
+  border-radius: 5px;
+}
+
+.project-box .project-box-wrapper .project-expection-skill {
+  position: relative;
+  height: 70px;
+  
+  margin-top: 30px;
+  
+  border-radius: 10px;
+}
+
+.project-expection-skill .expection-skill-label {
+  background-color: #E8E2D9;
+  color: #5C4033; 
+  
+  padding: 5px;
+  border-radius: 7px;
+  
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.project-box .project-box-wrapper .project-expection-skill ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  
+  padding: 15px 10px;;
+}
+
+.project-box .project-box-wrapper .project-expection-skill li {
+  margin: 0 7px;
+  padding: 3px;
+  font-size: 15px;
+  font-weight: 450;
+  background-color: #FDFBF7;
+  border-radius: 5px;
+}
+
 .project-box .project-box-wrapper .project-description{
   position: relative;
   color: #4A5D4E;
@@ -770,8 +858,29 @@ nav .nav-bar .logo a {
   position: relative;
   height: 500px;
   width: 100%;
-  border: 5px solid black;
-  background-color: #0107;
+  background-color: #9A9F8C;
+}
+
+#Career .Career-pin {
+  height: 120px;
+  width: 100%;
+  padding: 30px;
+  text-align: center;
+  color: #2D2926;
+  font-size: 50px;
+  font-weight: 650;
+}
+
+#Career .Career-pin p span {
+  position: relative;
+}
+
+#Career .Career-pin p span::after {
+  content: '';
+  position: absolute;
+  bottom: 1px; left: 9px;
+  width: 95%; height: 1px;
+  background-color: #2D2926;
 }
 
 #Contact {
